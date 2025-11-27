@@ -104,10 +104,10 @@ $jadwalList = $pdo->query("
         <div class="flex justify-between items-center mb-4">
           <h2 class="text-xl font-bold text-gray-800 select-none">Jadwal Harian</h2>
           <div class="flex space-x-2">
-            <button id="openFormBtn" aria-label="Tambah jadwal baru" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md flex items-center transition-colors duration-300">
+            <button id="openFormBtn" aria-label="Tambah jadwal baru" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-md flex items-center transition-colors duration-300">
               <i class="fas fa-plus mr-2"></i> Tambah
             </button>
-            <button id="lihatSemuaJadwalBtn" class="bg-gray-200 hover:bg-gray-300 text-blue-900 font-semibold px-4 py-2 rounded-md border border-gray-300">Lihat Semua</button>
+            <button id="lihatSemuaJadwalBtn" class="bg-gray-200 hover:bg-gray-300 text-orange-900 font-semibold px-4 py-2 rounded-md border border-gray-300">Lihat Semua</button>
           </div>
         </div>
         
@@ -144,7 +144,8 @@ $jadwalList = $pdo->query("
                         data-selesai="<?php echo $jadwal['waktu_selesai']; ?>"
                         data-kegiatan="<?php echo htmlspecialchars($jadwal['jenis_kegiatan']); ?>"
                         aria-label="Edit jadwal">
-                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-pencil-alt text-orange-600"></i>
+
                       </button>
                       <button class="text-red-500 hover:text-red-700 p-2 deleteBtn"
                         data-id="<?php echo $jadwal['id_jadwal']; ?>"
@@ -262,7 +263,7 @@ $jadwalList = $pdo->query("
       </div>
       <div class="flex justify-end space-x-3 mt-8">
         <button type="button" id="cancelBtn" class="bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 transition-colors">Batal</button>
-        <button type="submit" name="submit_jadwal" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors">Simpan</button>
+        <button type="submit" name="submit_jadwal" class="bg-orange-600 text-white px-4 py-2 rounded-md hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors">Simpan</button>
       </div>
     </form>
   </div>

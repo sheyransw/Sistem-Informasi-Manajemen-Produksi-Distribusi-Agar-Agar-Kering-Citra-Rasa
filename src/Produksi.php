@@ -121,13 +121,13 @@ $total_reject = $totals['total_reject'] ?? 0;
       <?php unset($_SESSION['notif']); ?>
     <?php endif; ?>
 
-    <button id="btnTambahProduk" type="button" class="inline-flex items-center gap-2 rounded-md bg-[#3249b3] px-4 py-2 text-white text-sm font-normal hover:bg-[#2a3b8a] transition-colors">
+    <button id="btnTambahProduk" type="button" class="inline-flex items-center gap-2 rounded-md bg-orange-600 px-4 py-2 text-white text-sm font-normal hover:bg-orange-700 transition-colors">
       <i class="fas fa-plus"></i> Tambah Produksi
     </button>
 
     <div class="overflow-x-auto mt-4">
       <table class="w-full border border-gray-300 text-sm border-collapse bg-white">
-        <thead class="bg-[#c3d1f0] sticky top-0 z-10">
+        <thead class="bg-[#FDF5CA] sticky top-0 z-10">
           <tr class="text-center text-xs font-normal text-black">
             <th class="border border-gray-300 px-2 py-1 w-12">No.</th>
             <th class="border border-gray-300 px-2 py-1 w-48">Nama Produk</th>
@@ -181,7 +181,7 @@ $total_reject = $totals['total_reject'] ?? 0;
     <div class="font-semibold text-black mt-6 mb-1 text-sm">Ringkasan Produksi</div>
     <table class="w-full max-w-xs border border-gray-300 border-collapse text-xs text-black bg-white mt-1">
       <thead>
-        <tr class="bg-[#c6d3f2] text-center font-normal">
+        <tr class="bg-[#FDF5CA] text-center font-normal">
           <th class="border border-gray-300 px-2 py-1" colspan="2">Jumlah</th>
         </tr>
       </thead>
@@ -236,7 +236,7 @@ $total_reject = $totals['total_reject'] ?? 0;
     <div class="text-xs text-gray-600 mb-3">Jumlah <b>reject</b> akan otomatis dihitung (<i>produksi - dikemas</i>).</div>
     <div class="text-red-500 text-xs mb-3 hidden error-message"></div>
 
-    <button type="submit" name="submit" class="w-full bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Simpan</button>
+    <button type="submit" name="submit" class="w-full bg-orange-600 text-white py-2 rounded hover:bg-orange-700 transition">Simpan</button>
     <button type="button" id="btnCloseTambah" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700" aria-label="Close modal"><i class="fas fa-times"></i></button>
   </form>
 </div>
@@ -276,7 +276,7 @@ $total_reject = $totals['total_reject'] ?? 0;
     <div class="text-xs text-gray-600 mb-3">Jumlah <b>reject</b> otomatis dihitung (<i>produksi - dikemas</i>).</div>
     <div class="text-red-500 text-xs mb-3 hidden error-message"></div>
 
-    <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">Simpan Perubahan</button>
+    <button type="submit" class="w-full bg-orange-600 text-white py-2 rounded hover:bg-orange-700 transition">Simpan Perubahan</button>
     <button type="button" id="btnCloseEdit" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700" aria-label="Close modal"><i class="fas fa-times"></i></button>
   </form>
 </div>

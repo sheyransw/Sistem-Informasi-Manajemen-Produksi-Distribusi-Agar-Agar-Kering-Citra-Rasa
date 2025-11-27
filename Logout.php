@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_logout'])) {
         type="submit"
         name="confirm_logout"
         value="1"
-        class="bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold px-4 py-2 rounded"
+        class="bg-orange-600 hover:bg-orange-700 text-white text-sm font-semibold px-4 py-2 rounded"
       >
         Keluar
       </button>

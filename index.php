@@ -22,7 +22,7 @@ $src = [
   'jadwal_lengkap' => 'src/jadwal_lengkap.php',
 ];
 
-$logoPath = 'assets/logo.jpg';
+$logoPath = 'assets/logo.png';
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ $logoPath = 'assets/logo.jpg';
   <aside class="w-52 border-r border-gray-300 flex flex-col p-4 bg-white sticky top-0 h-screen">
     <div class="mb-10 flex justify-center">
       <?php if (file_exists($logoPath)) {
-        echo '<img src="' . htmlspecialchars($logoPath) . '" alt="Logo perusahaan" class="max-h-20 w-16 object-contain" />';
+        echo '<img src="' . htmlspecialchars($logoPath) . '" alt="Logo perusahaan" class="max-h-28 w-24 object-contain" />';
       } else {
         echo '<div class="w-full h-20 flex items-center justify-center border border-gray-300 rounded text-gray-400 text-sm">Logo belum diupload</div>';
       } ?>
@@ -59,8 +59,8 @@ $logoPath = 'assets/logo.jpg';
       ];
 
       foreach ($menuItems as $key => $label) {
-        $isActive = ($page === $key) ? 'bg-blue-200 border-blue-400 font-semibold' : 'border-gray-300';
-        echo "<a href='Index.php?page=$key' class='text-center py-2 rounded border $isActive shadow-sm text-black transition-all hover:bg-blue-100 hover:border-blue-300'>$label</a>";
+        $isActive = ($page === $key) ? 'bg-[#FDF5CA] border-orange-600 font-semibold' : 'border-gray-300';
+        echo "<a href='Index.php?page=$key' class='text-center py-2 rounded border $isActive shadow-sm text-black transition-all hover:bg-[#FDF5CA] hover:border-orange-600'>$label</a>";
       }
       ?>
       <a href="Logout.php" class="text-center py-2 rounded border border-red-300 shadow-sm text-red-600 transition-all hover:bg-red-100 hover:border-red-400">Logout</a>
@@ -69,7 +69,7 @@ $logoPath = 'assets/logo.jpg';
 
   <!-- Main Content -->
   <main class="flex-1 flex flex-col">
-    <header class="sticky top-0 bg-[#2f49b7] text-white px-8 py-6 shadow-md z-40">
+    <header class="sticky top-0 bg-orange-600 text-white px-8 py-6 shadow-md z-40">
       <h1 class="text-xl font-normal"><?= ucfirst($page) ?></h1>
     </header>
 

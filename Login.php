@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="text-red-500 text-sm mb-4 text-center"><?= $error ?></div>
     <?php endif; ?>
 
-    <label for="username" class="block text-blue-700 mb-1 text-sm font-medium">Username</label>
+    <label for="username" class="block text-orange-600 mb-1 text-sm font-medium">Username</label>
     <input
       id="username"
       name="username"
@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       required
     />
 
-    <label for="password" class="block text-blue-700 mb-1 text-sm font-medium">Password</label>
+    <label for="password" class="block text-orange-600 mb-1 text-sm font-medium">Password</label>
     <input
       id="password"
       name="password"
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <button
       type="submit"
-      class="block mx-auto bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-md text-sm"
+      class="block mx-auto bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-md text-sm"
     >
       Login
     </button>

@@ -190,16 +190,16 @@ try {
     <?php unset($_SESSION['notif']); endif; ?>
 
     <div class="flex flex-col md:flex-row md:items-center md:space-x-4 mb-4">
-      <button id="btnTambahPekerja" class="flex-shrink-0 inline-flex items-center gap-2 bg-[#2f4ea1] text-white text-sm font-normal px-4 py-2 rounded shadow-sm hover:shadow-md transition-shadow mb-2 md:mb-0" type="button"><i class="fas fa-plus"></i> Tambah Pekerja</button>
+      <button id="btnTambahPekerja" class="flex-shrink-0 inline-flex items-center gap-2 bg-orange-600 text-white text-sm font-normal px-4 py-2 rounded shadow-sm hover:bg-orange-700 transition-colors" type="button"><i class="fas fa-plus"></i> Tambah Pekerja</button>
       <form action="Index.php" method="GET" class="flex flex-1 max-w-md">
         <input type="hidden" name="page" value="pekerja">
-        <input type="text" name="search" placeholder="Cari nama pekerja..." class="flex-grow border border-gray-300 rounded-l px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#2f4ea1]" value="<?php echo htmlspecialchars($search_term); ?>">
-        <button type="submit" class="bg-[#2f4ea1] text-white px-6 py-2 rounded-r shadow-sm hover:shadow-md transition-shadow">Cari</button>
+        <input type="text" name="search" placeholder="Cari nama pekerja..." class="flex-grow border border-gray-300 rounded-l px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#FDF5CA]" value="<?php echo htmlspecialchars($search_term); ?>">
+        <button type="submit" class="bg-orange-600 text-white px-6 py-2 rounded-r shadow-sm hover:bg-orange-700 transition-colors">Cari</button>
       </form>
     </div>
 
     <table class="w-full border border-gray-300 text-sm bg-white text-left">
-      <thead class="bg-[#bdd4f2] text-xs text-gray-900">
+      <thead class="bg-[#FDF5CA] text-xs text-gray-900">
         <tr>
           <th class="border border-gray-300 px-3 py-2 w-12">No.</th>
           <th class="border border-gray-300 px-3 py-2 w-40">Nama</th>
@@ -247,7 +247,7 @@ try {
     </table>
 
     <table class="w-full max-w-sm border border-gray-300 text-sm mt-4 bg-white">
-      <thead class="bg-[#bdd4f2] text-gray-900 text-xs">
+      <thead class="bg-[#FDF5CA] text-gray-900 text-xs">
         <tr><th class="border border-gray-300 px-3 py-1 text-center" colspan="2">Ringkasan Finansial</th></tr>
       </thead>
       <tbody>
@@ -307,7 +307,7 @@ try {
       <div class="mb-4"><label class="block text-sm font-medium text-gray-700 mb-1">Nama</label><input type="text" name="nama_pekerja" class="w-full px-3 py-2 border border-gray-300 rounded" required /></div>
       <div class="mb-4"><label class="block text-sm font-medium text-gray-700 mb-1">Kontak</label><input type="text" name="kontak" class="w-full px-3 py-2 border border-gray-300 rounded" required /></div>
       <div class="mb-6"><label class="block text-sm font-medium text-gray-700 mb-1">Alamat</label><textarea name="alamat" class="w-full px-3 py-2 border border-gray-300 rounded" required></textarea></div>
-      <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded">Simpan</button>
+      <button type="submit" class="w-full bg-orange-600 text-white py-2 rounded hover:bg-orange-700 transition-colors">Simpan</button>
     </form>
   </div>
 
@@ -321,7 +321,7 @@ try {
       <div class="mb-4"><label class="block text-sm font-medium text-gray-700 mb-1">Nama</label><input type="text" name="nama_pekerja" id="nama_pekerja_edit" class="w-full px-3 py-2 border border-gray-300 rounded" required /></div>
       <div class="mb-4"><label class="block text-sm font-medium text-gray-700 mb-1">Kontak</label><input type="text" name="kontak" id="kontak_edit" class="w-full px-3 py-2 border border-gray-300 rounded" required /></div>
       <div class="mb-6"><label class="block text-sm font-medium text-gray-700 mb-1">Alamat</label><textarea name="alamat" id="alamat_edit" class="w-full px-3 py-2 border border-gray-300 rounded" required></textarea></div>
-      <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded">Simpan Perubahan</button>
+      <button type="submit" class="w-full bg-orange-600 text-white py-2 rounded hover:bg-orange-700 transition-colors">Simpan Perubahan</button>
     </form>
   </div>
 

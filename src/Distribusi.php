@@ -155,13 +155,13 @@ $produk_options = $pdo->query("
       <?php unset($_SESSION['notif']); ?>
     <?php endif; ?>
 
-    <button id="btnTambah" class="mb-4 inline-flex items-center bg-blue-700 hover:bg-blue-800 text-white text-sm font-normal px-4 py-2 rounded" type="button">
+    <button id="btnTambah" class="mb-4 inline-flex items-center bg-orange-600 hover:bg-orange-700 text-white text-sm font-normal px-4 py-2 rounded" type="button">
       <i class="fas fa-plus"></i>&nbsp;Input Pesanan
     </button>
 
     <table class="w-full border border-gray-300 text-sm bg-white">
       <thead>
-        <tr class="bg-blue-200 text-black text-left">
+        <tr class="bg-[#FDF5CA] text-black text-left">
           <th class="border border-gray-300 px-3 py-2">No.</th>
           <th class="border border-gray-300 px-3 py-2">Distributor</th>
           <th class="border border-gray-300 px-3 py-2">Alamat</th>
@@ -300,11 +300,11 @@ $produk_options = $pdo->query("
       <div class="mt-4">
         <div class="text-sm font-semibold text-gray-800 mb-2">Detail Produk</div>
         <div id="produkListMulti"></div>
-        <button type="button" id="btnAddRow" class="mt-3 bg-blue-700 text-white text-xs px-3 py-1 rounded">+ Tambah Produk</button>
+        <button type="button" id="btnAddRow" class="mt-3 bg-orange-600 text-white text-xs px-3 py-1 rounded hover:bg-orange-700 transition-colors">+ Tambah Produk</button>
       </div>
 
       <div class="mt-5">
-        <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded">Simpan</button>
+        <button type="submit" class="w-full bg-orange-600 text-white py-2 rounded hover:bg-orange-700 transition-colors">Simpan</button>
       </div>
     </form>
   </div>

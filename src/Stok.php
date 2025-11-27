@@ -111,12 +111,12 @@ $stok_summary = $pdo->query("SELECT status_stok, SUM(jumlah_stok) as total_jumla
       <?php unset($_SESSION['notif']); ?>
     <?php endif; ?>
 
-    <button id="btnTambahStok" class="mb-4 inline-flex items-center gap-2 bg-blue-700 text-white text-sm font-normal px-4 py-2 rounded" type="button">
+    <button id="btnTambahStok" class="mb-4 inline-flex items-center gap-2 bg-orange-600 text-white text-sm font-normal px-4 py-2 rounded hover:bg-orange-700 transition-colors" type="button">
       <i class="fas fa-plus"></i> Tambah Stok Dari Produksi
     </button>
 
     <table class="w-full border border-gray-300 text-sm bg-white">
-      <thead class="bg-blue-200 sticky top-0 z-10">
+      <thead class="bg-[#FDF5CA] sticky top-0 z-10">
         <tr class="text-black text-left">
           <th class="border border-gray-300 px-3 py-2">No.</th>
           <th class="border border-gray-300 px-3 py-2">ID Produksi</th>
@@ -163,7 +163,7 @@ $stok_summary = $pdo->query("SELECT status_stok, SUM(jumlah_stok) as total_jumla
     <div class="mt-8">
       <h3 class="text-lg font-semibold mb-2 text-gray-700">Ringkasan Stok</h3>
       <table class="w-full max-w-md border border-gray-300 text-sm bg-white">
-        <thead class="bg-blue-200 sticky top-0 z-10">
+        <thead class="bg-[#FDF5CA] sticky top-0 z-10">
           <tr class="text-black text-left">
             <th class="border border-gray-300 px-3 py-2 w-12">No.</th>
             <th class="border border-gray-300 px-3 py-2">Status Stok</th>
@@ -241,7 +241,7 @@ $stok_summary = $pdo->query("SELECT status_stok, SUM(jumlah_stok) as total_jumla
           <option value="Reject">Reject</option>
         </select>
       </div>
-      <button type="submit" name="submit" class="w-full bg-blue-700 text-white py-2 rounded">Simpan</button>
+      <button type="submit" name="submit" class="w-full bg-orange-600 text-white py-2 rounded hover:bg-orange-700 transition-colors">Simpan</button>
     </form>
   </div>
 
@@ -273,7 +273,7 @@ $stok_summary = $pdo->query("SELECT status_stok, SUM(jumlah_stok) as total_jumla
         <input type="number" name="jumlah_stok" id="jumlah_stok_edit" min="0" class="w-full px-3 py-2 border border-gray-300 rounded shadow-sm" required />
       </div>
 
-      <button type="submit" name="submit" class="w-full bg-blue-700 text-white py-2 rounded">Simpan Perubahan</button>
+      <button type="submit" name="submit" class="w-full bg-orange-600 text-white py-2 rounded hover:bg-orange-700 transition-colors">Simpan Perubahan</button>
     </form>
   </div>
 

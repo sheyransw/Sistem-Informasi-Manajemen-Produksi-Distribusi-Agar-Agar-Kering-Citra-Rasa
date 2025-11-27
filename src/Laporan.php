@@ -1,6 +1,6 @@
 <?php
 // Laporan.php — tabel saja + tombol Cetak PDF (path ke /laporan/laporan_pdf.php)
-$koneksi = new mysqli("localhost", "root", "", "salsa_ff");
+$koneksi = new mysqli("localhost", "root", "", "citra_rasa");
 if ($koneksi->connect_errno) { die("Gagal konek DB: ".$koneksi->connect_error); }
 
 $kategori = $_GET['kategori'] ?? 'semua';
@@ -181,7 +181,7 @@ if ($kategori==='semua') {
     <?php if ($kategori==='semua'): ?>
       <div class="overflow-x-auto">
         <table class="min-w-full border text-sm text-left bg-white">
-          <thead class="bg-blue-200 text-gray-900">
+          <thead class="bg-[#FDF5CA] text-gray-900">
             <tr>
               <th class="border border-gray-300 px-3 py-2">Periode</th>
               <th class="border border-gray-300 px-3 py-2">Produksi</th>
@@ -216,7 +216,7 @@ if ($kategori==='semua') {
     <?php elseif ($kategori==='jadwal'): ?>
       <div class="overflow-x-auto">
         <table class="min-w-full border text-sm text-left bg-white">
-          <thead class="bg-blue-200 text-gray-900">
+          <thead class="bg-orange-[#FDF5CA] text-gray-900">
             <tr>
               <th class="border px-3 py-2">No.</th>
               <th class="border px-3 py-2">Tanggal</th>
@@ -243,7 +243,7 @@ if ($kategori==='semua') {
     <?php elseif (!empty($data)): ?>
       <div class="overflow-x-auto">
         <table class="min-w-full border text-sm text-left bg-white">
-          <thead class="bg-blue-200 text-gray-900">
+          <thead class="bg-orange-[#FDF5CA] text-gray-900">
             <tr>
               <th class="border px-3 py-2">No.</th>
               <?php foreach(array_keys($data[0]) as $col): ?>
